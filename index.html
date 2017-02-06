@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Le quizz d&eacute;bile</title>
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation-icons/foundation-icons.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Le Quizz Debile</li>
+                <li>
+                    <a href="http://lequizzdebile.toile-libre.org/index.html">Menu</a>
+                </li>
+                <li><a href="http://lequizzdebile.toile-libre.org/quizz.html">Quizz n&deg;1</a></li>
+                <li id="q2l"></li>
+                <li id="q3l"></li>
+                <!--<li><a href="http://lequizzdebile.toile-libre.org/quizz2.html">Quizz n&deg;2</a></li>-->
+            </ul>
+        </div>
+    </div>
+    <script>
+        function getCookie(sName) {
+            var oRegex = new RegExp("(?:; )?" + sName + "=([^;]*);?");
+            if (oRegex.test(document.cookie)) {
+                return decodeURIComponent(RegExp["$1"]);
+            } else {
+                return null;
+            }
+        }
+
+        var quizz1done = getCookie("quizz1");
+        var quizz2done = getCookie("quizz2");
+        var quizz3done = getCookie("quizz3");
+
+        var badge = "<span class=\"badge success\"><i class=\"fi-check\"></i></span>";
+    </script>
+</head>
+
+<body>
+    <h2>Bienvenue</h2>
+    <p> Vous n'&ecirc;tes pas la par hasard, visiteur. En effet, un glandu vous a fil&eacute; un lien pour tester des quizz d&eacute;biles
+        que vous allez torcher de ce pas. Si vous voulez tester ces quizz, vous les trouverez juste en dessous. J'ai beaucoup
+        boss&eacute; dessus, alors soyez sympas.</p>
+    <blockquote>
+        Si vous n'avez pas fait ces deux quizz, vous ratez quelque chose.
+        <cite>J&eacute;sus</cite>
+    </blockquote>
+    <blockquote>
+        Oui
+        <cite>Gandhi</cite>
+    </blockquote>
+    <a href="http://lequizzdebile.toile-libre.org/quizz.html">Quizz n&deg;1: Le Quizz Grarnould</a>
+    <span id="b1"></span>
+    <br>
+    <span id="q2"></span>
+    <span id="b2"></span>
+    <br>
+    <span id="q3"></span>
+    <span id="b3"></span>
+    <script>
+        if (quizz1done) {
+            document.getElementById("b1").innerHTML =
+                "<span class=\"badge success\" id=\"b1\"><i class=\"fi-check\"></span>";
+            document.getElementById("q2").innerHTML =
+                "<a href=\"http://lequizzdebile.toile-libre.org/quizz2.html\">Quizz n&deg;2: Le Quizz David</a>";
+            document.getElementById("q2l").innerHTML =
+                "<a href=\"http://lequizzdebile.toile-libre.org/quizz2.html\">Quizz n&deg;2</a>"
+        }
+        if (quizz2done) {
+            document.getElementById("b2").innerHTML =
+                "<span class=\"badge success\" id=\"b2\"><i class=\"fi-check\"></span>";
+            document.getElementById("q3").innerHTML =
+                "<a href=\"http://lequizzdebile.toile-libre.org/quizz3.html\">Quizz n&deg;3: Le Quizz Random</a>"
+            document.getElementById("q3l").innerHTML =
+                "<a href=\"http://lequizzdebile.toile-libre.org/quizz3.html\">Quizz n&deg;3</a>"
+        }
+        if (quizz3done) {
+            document.getElementById("b3").innerHTML =
+                "<span class=\"badge success\" id=\"b2\"><i class=\"fi-check\"></span>";
+        }
+    </script>
+</body>
+
+</html>

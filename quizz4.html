@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Le trone du roi Thigros</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/foundation.js"></script>
+
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Le Quizz Debile</li>
+          <li>
+            <a href="http://lequizzdebile.toile-libre.org/index.html">Menu</a>
+          </li>
+          <!--<li><a href="http://lequizzdebile.toile-libre.org/quizz.html">Quizz n&deg;1</a></li>
+          <li><a href="http://lequizzdebile.toile-libre.org/quizz3.html">Quizz n&deg;2</a></li>-->
+        </ul>
+      </div>
+    </div>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <h1>Le super quizz.</h1>
+        <br>
+        <h4>1:  </h4> <!--Question1-->
+        <form>
+            <fieldset>
+                <input type="text" id="q1" value="">
+            </fieldset>
+        </form>
+        <br>
+        <button onclick="question1()">Envoyer</button>
+        <p id="zone1"></p>
+        <p id="zone1b"></p>
+
+        <h4>2:</h4> <!--Question2-->
+        <form>
+            <fieldset>
+                <input type="text" id="q2" value=""><br>
+            </fieldset>
+        </form>
+        <button onclick="question2()">Envoyer</button>
+        <p id="zone2"></p>
+        <p id="zone2b"></p>
+
+        <h4>3: </h4>
+        <form>
+            <fieldset>
+                <input type="text" id="q3" value=""><br>
+            </fieldset>
+        </form>
+        <button onclick="question3()">Envoyer</button>
+        <p id="zone3"></p>
+        <p id="zone3b"></p>
+
+        <h4>4: </h4>
+        <form>
+            <fieldset>
+                <input type="text" id="q4" value=""><br>
+            </fieldset>
+        </form>
+        <button onclick="question4()">Envoyer</button>
+        <p id="zone4"></p>
+        <p id="zone4b"></p>
+
+        <h4>5: </h4>
+        <form>
+            <fieldset>
+                <input type="text" id="q5" value=""><br>
+            </fieldset>
+        </form>
+        <button onclick="question5()">Envoyer</button>
+        <p id="zone5"></p>
+        <p id="zone5b"></p>
+
+        <br>
+        <!--<button style="height:50px" onclick="dispResultat()">Récompense</button>-->
+        <h2 id="zoneResultat"></h2>
+    </div>
+
+
+    <script src="js/quizz4.js"></script>
+    <br>
+    <!--<script src="js/vendor/jquery.min.js"></script>-->
+
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</hmtl>

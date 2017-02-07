@@ -8,7 +8,7 @@
     var resultat = 0;
 
     function play_single_sound() {
-        document.getElementById('francais').play();
+        document.getElementById('specialpug').play();
     }
 
     //Fonction pour afficher une image
@@ -28,7 +28,7 @@
     function question1() {
         if (!question1faite) {
             var rep1 = document.getElementById("q1").value;
-            if (rep1 == "C'est pas faux" || rep1 == "c'est pas faux" || rep1 == "cest pas faux" || rep1 == "Cest pas faux") {
+            if (rep1 == "Moonmen" || rep1 == "moonmen" || rep1 == "Moon men" || rep1 =="moon men") {
                 document.getElementById("zone1").innerHTML = "<font color=\"green\">" + rep1 + "</font> était la bonne réponse!";
                 resultat++;
                 question1faite = true;
@@ -46,7 +46,7 @@
 
         if (!question2faite) {
             var rep2 = document.getElementById("q2").value;
-            if (rep2 == "C'est pas faux" || rep2 == "c'est pas faux" || rep2=="Cest pas faux") {
+            if (rep2 == "Time And Relative Dimension In Space" || rep2 == "time and relative dimension in space") {
                 document.getElementById("zone2").innerHTML = "<font color=\"green\">" + rep2 + "</font> était la bonne réponse!";
                 resultat++;
             } else {
@@ -61,7 +61,7 @@
 
         if (!question3faite) {
             var rep3 = document.getElementById("q3").value;
-            if (rep3 == "Français" || rep3 == "français" || rep3 == "Francais" || rep3=="francais") {
+            if (rep3 == "Loca" || rep3=="loca") {
                 document.getElementById("zone3").innerHTML = "<font color=\"green\">" + rep3 + "</font> était la bonne réponse!";
                 play_single_sound();
                 resultat++;
@@ -130,9 +130,9 @@
                 case 5:
                     document.getElementById("zoneResultat").innerHTML = "<br><b>Légendaire!</b>";
                     var strWindowFeatures = "location=yes,height=400,width=525,scrollbars=no,status=yes";
-                    var URL = "http://lequizzdebile.toile-libre.org/badge3.html";
+                    var URL = "http://lequizzdebile.toile-libre.org/badge4.html";
                     var win = window.open(URL, "_blank", strWindowFeatures);
-                    setCookie("quizz3",true);
+                    setCookie("quizz4",true);
 
                     break;
                 default:

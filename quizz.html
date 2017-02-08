@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="css/foundation.css">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/foundation.min.js"></script>
-
     <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Le Quizz Debile</li>
-          <li>
-            <a href="http://lequizzdebile.toile-libre.org/index.html">Menu</a>
-          </li>
-          <!--<li><a href="http://lequizzdebile.toile-libre.org/quizz.html">Quizz n&deg;1</a></li>
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Le Quizz Debile</li>
+                <li>
+                    <a href="http://lequizzdebile.toile-libre.org/index.html">Menu</a>
+                </li>
+                <!--<li><a href="http://lequizzdebile.toile-libre.org/quizz.html">Quizz n&deg;1</a></li>
           <li><a href="http://lequizzdebile.toile-libre.org/quizz3.html">Quizz n&deg;2</a></li>-->
-        </ul>
-      </div>
+            </ul>
+        </div>
     </div>
 </head>
 
@@ -41,7 +39,6 @@
         <button onclick="question1()">Envoyer</button>
         <p id="zone1"></p>
         <p id="zone1b"></p>
-
         <h4>2: Quel est le meilleur jour de la semaine?</h4>
         <form>
             <fieldset>
@@ -51,7 +48,6 @@
         <button onclick="question2()">Envoyer</button>
         <p id="zone2"></p>
         <p id="zone2b"></p>
-
         <h4>3: Quelle est la recette f&eacute;tiche de Thigro?</h4>
         <form>
             <fieldset>
@@ -61,7 +57,6 @@
         <button onclick="question3()">Envoyer</button>
         <p id="zone3"></p>
         <p id="zone3b"></p>
-
         <h4>4: Mid or ...</h4>
         <form>
             <fieldset>
@@ -71,7 +66,6 @@
         <button onclick="question4()">Envoyer</button>
         <p id="zone4"></p>
         <p id="zone4b"></p>
-
         <h4>5: Quelle salope, cette ..... !</h4>
         <form>
             <fieldset>
@@ -81,20 +75,17 @@
         <button onclick="question5()">Envoyer</button>
         <p id="zone5"></p>
         <p id="zone5b"></p>
-
         <br>
         <!--<button style="height:50px" onclick="dispResultat()">Récompense</button>-->
+        <span id="retourMenu" />
+        <br>
         <h2 id="zoneResultat"></h2>
     </div>
-
-
     <script src="js/quizz1.min.js"></script>
     <br>
     <!--<script src="js/vendor/jquery.min.js"></script>-->
-
     <script>
         $(document).foundation();
     </script>
 </body>
-
 </hmtl>

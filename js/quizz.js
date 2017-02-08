@@ -110,21 +110,27 @@ function dispResultat() {
         switch (resultat) {
             case 0:
                 document.getElementById("zoneResultat").innerHTML = "<br><b>Grosse merde</b>";
+                document.getElementById("retourMenu").innerHTML = "<a href=\"http://lequizzdebile.toile-libre.org/index.html\">Menu</a>"
                 break;
             case 1:
                 document.getElementById("zoneResultat").innerHTML = "<br><b>C'est très bof quand même.</b>";
+                document.getElementById("retourMenu").innerHTML = "<a href=\"http://lequizzdebile.toile-libre.org/index.html\">Menu</a>"
                 break;
             case 2:
                 document.getElementById("zoneResultat").innerHTML = "<br><b>Y'a pire, mais y'a mieux.</b>";
+                document.getElementById("retourMenu").innerHTML = "<a href=\"http://lequizzdebile.toile-libre.org/index.html\">Menu</a>"
                 break;
             case 3:
                 document.getElementById("zoneResultat").innerHTML = "<br><b>Pas mal, pas mal.</b>";
+                document.getElementById("retourMenu").innerHTML = "<a href=\"http://lequizzdebile.toile-libre.org/index.html\">Menu</a>"
                 break;
             case 4:
                 document.getElementById("zoneResultat").innerHTML = "<br><b>... C'est de la triche!</b>";
+                document.getElementById("retourMenu").innerHTML = "<a href=\"http://lequizzdebile.toile-libre.org/index.html\">Menu</a>"
                 break;
             case 5:
                 document.getElementById("zoneResultat").innerHTML = "<br><b>Légendaire!</b>";
+                document.getElementById("retourMenu").innerHTML = "<a href=\"http://lequizzdebile.toile-libre.org/index.html\">Menu</a>"
                 var strWindowFeatures = "location=yes,height=425,width=425,scrollbars=no,status=yes";
                 var URL = "http://lequizzdebile.toile-libre.org/badge1.html";
                 var win = window.open(URL, "_blank", strWindowFeatures);

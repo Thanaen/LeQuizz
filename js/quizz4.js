@@ -78,7 +78,7 @@
 
         if (!question4faite) {
             var rep4 = document.getElementById("q4").value;
-            if (rep4 == "Kadoc" || rep4=="kadoc") {
+            if (rep4 =="Silence" || rep4=="silence") {
                 document.getElementById("zone4").innerHTML = "<font color=\"green\">" + rep4 + "</font> était la bonne réponse!";
                 resultat++;
             } else {
@@ -93,7 +93,7 @@
 
         if (!question5faite) {
             var rep5 = document.getElementById("q5").value;
-            if (rep5 == "Fishy" || rep5=="fishy") {
+            if (rep5 == "tupuduku" || rep5=="Tupuduku") {
                 document.getElementById("zone5").innerHTML = "<font color=\"green\">" + rep5 + "</font> était la bonne réponse!";
                 resultat++;
             } else {
@@ -129,7 +129,7 @@
                     break;
                 case 5:
                     document.getElementById("zoneResultat").innerHTML = "<br><b>Légendaire!</b>";
-                    var strWindowFeatures = "location=yes,height=400,width=525,scrollbars=no,status=yes";
+                    var strWindowFeatures = "location=yes,height=295,width=400,scrollbars=no,status=yes";
                     var URL = "http://lequizzdebile.toile-libre.org/badge4.html";
                     var win = window.open(URL, "_blank", strWindowFeatures);
                     setCookie("quizz4",true);
